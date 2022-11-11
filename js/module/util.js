@@ -1,4 +1,4 @@
-const  getRandomPositiveInteger = (a, b) =>  {
+const getRandomPositiveInteger = (a, b) => {
   const lower = Math.ceil(Math.min(Math.abs(a), Math.abs(b)));
   const upper = Math.floor(Math.max(Math.abs(a), Math.abs(b)));
   const result = Math.random() * (upper - lower + 1) + lower;
@@ -8,7 +8,6 @@ const  getRandomPositiveInteger = (a, b) =>  {
 const checkMaxLength = (string, maxLen) => string.length <= maxLen;
 
 const getRandomArrayElement = (elements) => elements[getRandomPositiveInteger(0, elements.length - 1)];
-
 
 export {
   getRandomPositiveInteger,
